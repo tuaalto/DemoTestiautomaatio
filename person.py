@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 class Person:
     def __init__(self, city, address, phone_number, name, age):
         self.name = name
@@ -38,12 +37,12 @@ class Person:
         self.age = age
 
     def get_age(self):
-        return age
+        return self.age
 
     def set_name(self, name):
         self.name = name
 
     def get_name(self):
-        return name
+        return self.name
 
 
