@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 class Person:
-    def __init__(self, city, address, phone_number):
+    def __init__(self, city, address, phone_number, name, age):
+        self.name = name
+        self.age = age
         self._city = city
         self._address = address
         self._phone_number = phone_number
@@ -29,4 +32,18 @@ class Person:
         self._phone_number = value
 
     def __str__(self):
-        return f'Address: {self._address}\nCity: {self._city}\nPhone: {self._phone_number}'
+        return f'Name: {self.name} Age: {self.age} Address: {self._address}\nCity: {self._city}\nPhone: {self._phone_number}'
+
+    def set_age(self, age):
+        self.age = age
+
+    def get_age(self):
+        return age
+
+    def set_name(self, name):
+        self.name = name
+
+    def get_name(self):
+        return name
+
+
